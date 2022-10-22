@@ -13,6 +13,7 @@
 body {
   font-family: "Roboto", sans-serif;
   background-color: var(--main-bcg-color);
+  color: var(--main-color);
 }
 
 .list {
@@ -32,6 +33,7 @@ body {
   color: var(--title-text-color);
   border: none;
   font-family: inherit;
+  cursor: pointer;
 }
 
 /* Page header */
@@ -138,7 +140,6 @@ body {
   font-size: 14px;
   line-height: calc(24 / 14);
   letter-spacing: 0.03em;
-  color: var(--main-color);
 }
 
 /* What we do */
@@ -168,10 +169,6 @@ body {
 .team-title {
   font-weight: 500;
   color: var(--title-text-color);
-}
-
-.team-text {
-  color: var(--main-color);
 }
 
 /* Styles for portfolio */
