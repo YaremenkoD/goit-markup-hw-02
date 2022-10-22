@@ -7,10 +7,10 @@
   --accent-color: #2196f3;
   --header-logo-color: #000000;
   --button-bcg-color: #f5f4fa;
+  --footer-color: rgba(255, 255, 255, 0.6);
 }
 
 body {
-  font-family: "Raleway", sans-serif;
   font-family: "Roboto", sans-serif;
   background-color: var(--main-bcg-color);
 }
@@ -27,7 +27,6 @@ body {
   font-weight: 500;
   font-size: 16px;
   line-height: calc(26 / 16);
-  text-align: center;
   letter-spacing: 0.03em;
   background-color: var(--button-bcg-color);
   color: var(--title-text-color);
@@ -37,7 +36,7 @@ body {
 
 /* Page header */
 .logo {
-  font-family: "Raleway";
+  font-family: "Raleway", sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 26px;
@@ -53,11 +52,15 @@ body {
   color: var(--header-logo-color);
 }
 
-.site-nav .link {
+.site-nav .link,
+.header-contacts .link {
   font-weight: 500;
   font-size: 14px;
   line-height: calc(16 / 14);
   letter-spacing: 0.02em;
+}
+
+.site-nav .link {
   color: var(--title-text-color);
 }
 
@@ -71,10 +74,6 @@ body {
 }
 
 .header-contacts .link {
-  font-weight: 500;
-  font-size: 14px;
-  line-height: calc(16 / 14);
-  letter-spacing: 0.02em;
   color: var(--main-color);
 }
 
@@ -106,11 +105,10 @@ body {
   font-size: 16px;
   line-height: calc(30 / 16);
   display: flex;
-  align-items: center;
-  text-align: center;
   letter-spacing: 0.06em;
   background-color: var(--accent-color);
   color: var(--main-bcg-color);
+  font-family: inherit;
 }
 
 /* List of solutions */
@@ -159,20 +157,20 @@ body {
   background-color: var(--button-bcg-color);
 }
 
-.team-title {
-  font-weight: 500;
-  font-size: 16px;
-  line-height: calc(19 / 16);
-  text-align: center;
-  letter-spacing: 0.03em;
-  color: var(--title-text-color);
-}
-
+.team-title,
 .team-text {
   font-size: 16px;
   line-height: calc(19 / 16);
   text-align: center;
   letter-spacing: 0.03em;
+}
+
+.team-title {
+  font-weight: 500;
+  color: var(--title-text-color);
+}
+
+.team-text {
   color: var(--main-color);
 }
 
@@ -213,7 +211,16 @@ body {
 }
 
 .adress {
+  font-style: normal;
   font-size: 14px;
   line-height: calc(24 / 14);
   letter-spacing: 0.03em;
+}
+
+.map {
+  color: var(--main-bcg-color);
+}
+
+.contact {
+  color: var(--footer-color);
 }
